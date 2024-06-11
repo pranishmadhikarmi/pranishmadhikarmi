@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+    background-color: rgb(172, 188, 202);
+    
+}
+
+.container {
+    padding: 15px;
+  }
+  
+  .container1{
+    text-shadow: 3px 2px #000000;
+    color: #e0d3d3ee;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: -45px;
+  }
+
+header img{
+        position: absolute;
+        top: 1.5%;
+        left:1%;
+        height: 55px;
+        cursor: pointer;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: blockletter;
+}
+
+button{
+        text-align: center;
+}
+
+nav ul {
+    text-align: right;
+}
+
+.login{
+display: inline-block;
+background: #ff5e3a;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+transition: background 0.3s ease;
+}
+
+.login:hover {
+    background: #333;
+}
+
+nav ul li {
+    display:inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:hover{
+    background:gray;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color:  #000000;
+    text-decoration: none;
+    font-family: raleway, helvetica, arial, sans-serif;
+    padding: 11px 14px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero {   
+    color: #ffffff;
+    text-align: center;
+    background: url('khwopa.jpg') no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-position: center; 
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0.70; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+.hero h1{
+    font-size:3.5em;
+    font-family: open sans, helvetica, arial, sans-serif;
+    letter-spacing: 8px;
+    margin: 15px;
+}
+
+.hero h6{
+    font-size: 1.5em;
+    font-family: open sans, helvetica, arial, sans-serif;
+}
+
+.container1 p {
+    font-family: open sans;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2.2px;
+    text-shadow: 1.5px 1.5px #000000;
+}
+.hero b{
+    font-size: 23px;
+    font-family:Optima, sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff5e3a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    text-shadow: none;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.about {
+    padding: 100px 0;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+
+.about p {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.course {
+    background:  #65b2df;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.courses h1{
+    font-size: 2.2em;
+    font-family: serif;
+    text-align: center;
+}
+
+.course h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.Facilities h2{
+    font-size: 2.2em;
+    font-family: serif;
+    text-align: center;
+}
+
+        .facilities-img{
+            width: 100vw;
+            height: 50%;
+            display:flex;
+            justify-content: space-around;       
+            align-items: center;
+            flex-wrap: wrap;
+             margin-bottom: 120px;
+                        }
+
+
+        .image img{
+            width: 400px;
+            height: 320px;
+            border-radius: 12px;
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.574);
+                }
+
+        .image img:hover{
+            transition: .8s ease-in-out;
+            transform: scale(1.2);
+            cursor: pointer;
+                }
+
+.contact {
+    background: #333;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.contact p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.contact form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff5e3a;
+    color: #fff;
+    border: none;
+    border-radius:10px;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+   
+}
+
+.contact form button:hover {
+    background: #c78454;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    background:  #6eb0d6;
+    padding: 4px;
+}
+
+footer p {
+    font-size: 15px; 
+    font-family: Quicksand, sans-serif;
+   
+}
+        @media (max-width: 768px) {
+            nav ul {
+                text-align: center;
+            }
+
+            nav ul li {
+                display: none;
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.4em;
+            }
+            
+            .hero b{
+                font-size: 0.8em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+          
+        }    
