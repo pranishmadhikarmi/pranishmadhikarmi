@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #121212;
+    color: #ffffff;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1e1e1e;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #00aaff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    background: #292929;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background: #00aaff;
+    color: #ffffff;
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-cards {
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.manage-products {
+    background: #0088ff;
+}
+
+.manage-users {
+    background: #ffaa00;
+}
+
+.manage-orders {
+    background: #44cc44;
+}
+
+.logout {
+    background: #ff4444;
+}
+
+.view_messages{
+    background: gray;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 210px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .card {
+        font-size: 16px;
+    }
+}

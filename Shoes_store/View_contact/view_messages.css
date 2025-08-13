@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #121212;
+    color: #ffffff;
+}
+
+.admin-container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1e1e1e;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #00aaff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    background: #292929;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background: #00aaff;
+    color: #ffffff;
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 30px;
+}
+
+.message-table {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.message-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.message-table th,
+.message-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.message-table th {
+    background-color: #1e1e1e;
+    color: #00aaff;
+}
+
+.message-table td {
+    background-color: #292929;
+    color: #ffffff;
+}
+
+.message-table tr:nth-child(even) {
+    background-color: #333;
+}
+
+.message-table tr:hover {
+    background-color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 210px;
+    }
+
+    .message-table table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .message-table table {
+        font-size: 12px;
+    }
+}
